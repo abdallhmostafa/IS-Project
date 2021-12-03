@@ -165,7 +165,11 @@ header ul li a:hover{
     transition: all .5s;
     padding: 35px;
     z-index: 1000;
-    margin-bottom: 40px;
+     background-image: url("/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+}
 
 }
 .about .about-container{
@@ -270,7 +274,7 @@ header ul li a:hover{
 
 /*==================================START OF FOOTER SECTION==============================*/
 .footer{
-    margin-top: 80px;
+
     position: relative;
     justify-content: space-between;
     display:inline-block;
