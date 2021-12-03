@@ -1,1 +1,11 @@
-// The Java Script File 
+`use strict`
+
+    //sticky navbar
+    var nav = document.getElementById('nav');
+        window.onscroll = function () {
+        if(window.pageYOffset > 100) { 
+        nav.classList.add("shrink");
+        }else{
+                nav.classList.remove("shrink");
+            }
+        }
