@@ -36,3 +36,42 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+
+
+
+
+
+
+
+//  ===================  Counter area in Stats section ===========
+
+const counters = document.querySelectorAll('.fact_count');
+const speed = 2000 ;
+counters.forEach(counter => {
+    const updateCount = () =>{
+        const target = +counter.getAttribute('data_target');
+        const count = +counter.innerText;
+
+        const inc = target/1000;
+    
+    if(count < target){
+        counter.innerText = Math.ceil(  count + inc);
+        setTimeout(updateCount, 1)
+
+    }
+    else{
+        count.innerText= target;
+
+    }
+    }
+    updateCount();
+})
+
+
+
+
+
+
+
